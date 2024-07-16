@@ -16,3 +16,7 @@ def hello():
 @app.route("/sum/<int:x>/<int:y>")
 def sum(x, y):
     return f"suma igual: {str(x + y)}"
+
+@app.route("/multiply/<int:x>/<int:y>")
+def multiply(x, y):
+    return f"MUltiplicacion igual a: {str(x * y)}"
